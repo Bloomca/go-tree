@@ -69,7 +69,7 @@ func dirTreeInternal(out io.Writer, path string, printFiles bool, padding string
 			} else {
 				newPadding = padding + "│\t"
 			}
-			dirTreeInternal(out, path+"/"+fileInfo.Name(), printFiles, newPadding)
+			dirTreeInternal(out, path+string(os.PathSeparator)+fileInfo.Name(), printFiles, newPadding)
 		} else {
 			var size string
 			if fileInfo.Size() == 0 {
