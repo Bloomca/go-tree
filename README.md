@@ -5,7 +5,7 @@ Tree CLI utility.
 Usage:
 
 ```sh
-go run main.go . # to show only folder
+go run main.go . # to show only folders
 go run main.go . -f # to show with files
 ```
 
